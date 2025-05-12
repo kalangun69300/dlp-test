@@ -91,7 +91,7 @@ class TweepyAPITests(TweepyTestCase):
         update = self.api.update_status(tweet_text)
         self.assertEqual(update.text, tweet_text)
 
-        # test destroy
+        # test destroy 
         deleted = self.api.destroy_status(id=update.id)
         self.assertEqual(deleted.id, update.id)
 
